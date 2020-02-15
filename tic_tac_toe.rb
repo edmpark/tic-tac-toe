@@ -11,7 +11,7 @@ class Game
   def status
     output = false
     diagonal1 = [ @grid[0][0], @grid[1][1], @grid[2][2] ]
-    diagonal2 = [ @grid[0][2], @grid[1][1], @grid[2][0] ]
+    diagonal2 = [ @grid[0][2], @grid[1][1], @grid[2][0] ] 
     #p diagonal1
     for i in 0..2 do
       if @grid[i].all? { |e| e == 'O' } || @grid[i].all? { |e| e == 'X' }
